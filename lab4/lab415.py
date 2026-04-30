@@ -1,6 +1,19 @@
-# Aplicación: provincias y comarcas (tupla inmutable)
-provincias_comarcas = ("Panamá", "Colón", "Chiriquí", "Darién")
-# provincias_comarcas[0] = "Veraguas"  # Esto daría error porque es tupla
-print("Provincias y Comarcas:")
-for lugar in provincias_comarcas:
-    print(f"- {lugar}")
+# Tupla con provincias y comarcas de Panamá (inmutable y ordenada)
+provincias = (
+    "Panamá",
+    "Colón", 
+    "Chiriquí",
+    "Darién",
+    "Herrera",
+    "Los Santos",
+    "Veraguas",
+    "Coclé",
+    "Bocas del Toro",
+    "Comarca Guna Yala",
+    "Comarca Emberá-Wounaan",
+    "Comarca Ngäbe-Buglé"
+)
+
+print("=== PROVINCIAS Y COMARCAS DE PANAMÁ ===")
+for i in range(len(provincias)):
+    print(f"{i+1}. {provincias[i]}")
